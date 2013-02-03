@@ -1,0 +1,38 @@
+Completed:
+Create Curve
+Create Graph
+Sync Curve, Graph
+
+TODO
+Make a multiple graph display for use displaying Markets
+Make default layout
+Make JGraph work in BorderLayout
+Make J<Components> work in BorderLayout
+
+Develop Market
+Make buying Market
+Make selling Market
+Make r&d Market
+Make marketing Market
+
+Develop Company - has money, stocks, bonds, loans, cash, factories, RMU, FPU, curves, [adv.] Business type [ex. retailType makes marketing cheaper, minerType discounts resources, etc.]
+	each company, based on data, will calculate monthly actions based on curves
+Make selfCompany - tracks stats, holds user defined curve
+Make otherCompany - tracks their stats, holds company curve
+	include companies with formulaic patterns, i.e. Linear, Sinusoidal, ExpoDec, Random
+
+Develop a test running system that compares companies
+	Montly action 
+			- buy market sets RMUs availible curve (supply curve, with max at some point, but less supplied at a lower price)
+			- selling market sets FPUs desired (demand curve, if price is low enough, it will keep on buying, min buy is 0)
+			- r&d market is fixed over a year, diminishing returns curve reset every year
+			- marketing is similar to r&d, diminishing returns over the year, etc.
+		- company curves determine what is sold, up to max of each unit
+		- costs for each month are calculated as base cost (depreciation), running cost (factories), one time cost (purchase), rent cost (loans, etc.)
+		- income comes from rent income (loans, etc.), one time payments, sales (resources)
+	Yearly action
+		- compiles report of total product sold
+		- each company presents a sheet with total costs, total income, current value(assets-liabilities), current cash
+		- companies with less that 0 value lose.
+		- if there is only one company, that company wins
+		- if there are multiple companies, run another year 
