@@ -1,0 +1,3 @@
+This is supposed to be a microeconomics simulation, that I have yet to get fully functioning.
+
+See http://www.youtube.com/watch?v=2TfaESAm4Uo for a description, in a bit of a bland format.
