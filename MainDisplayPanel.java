@@ -1,4 +1,4 @@
-package EconSimGit;
+package src.EconSimGit;
 
 import java.awt.*;
 import java.awt.event.*;
